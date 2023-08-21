@@ -151,7 +151,7 @@ const Header: React.FC<HeaderProbs> = ({ children, className }) => {
 
               "
               >
-                Log In
+                Log in
               </Button>
               
             </div>
