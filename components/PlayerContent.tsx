@@ -1,6 +1,6 @@
 "use client";
 
-import useSound from "use-sound";
+import useSound from 'use-sound';
 import { useEffect, useState } from "react";
 import { BsPauseFill, BsPlayFill } from "react-icons/bs";
 import { HiSpeakerWave, HiSpeakerXMark } from "react-icons/hi2";
@@ -102,7 +102,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
     <div className="grid grid-cols-2 md:grid-cols-3 h-full">
         <div className="flex w-full justify-start">
           <div className="flex items-center gap-x-4">
-            <MediaItem data={song} onClick={()=>{}}/>
+            <MediaItem data={song} onClick={()=>{}} />
             <LikeButton songId={song.id} />
           </div>
         </div>
