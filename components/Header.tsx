@@ -12,6 +12,7 @@ import { FaUserAlt } from "react-icons/fa";
 import { toast } from "react-hot-toast";
 import usePlayer from "@/hooks/usePlayer";
 
+
 interface HeaderProbs {
   children: React.ReactNode;
   className?: string;
@@ -41,6 +42,16 @@ const Header: React.FC<HeaderProbs> = ({ children, className }) => {
     }
 
   };
+
+ 
+
+  const handleClickSearch = () => {
+    window.location.href = "/search";
+  };
+  const handleClickHome = () => {
+    window.location.href = "/";
+  };
+  
 
   return (
     <div
@@ -110,30 +121,33 @@ const Header: React.FC<HeaderProbs> = ({ children, className }) => {
         </div>
         <div className="flex md:hidden gap-x-2 items-center">
           <button
-            className="
-        rounded-full
-        p-2
-        bg-white
-        flex
-        items-center
-        justify-center
-        hover:opacity-75
-        transition
+          onClick={handleClickHome}
+          className="
+          rounded-full
+          p-2
+          bg-white
+          flex
+          items-center
+          justify-center
+          hover:opacity-75
+          transition
 
         "
           >
             <HiHome className="text-black" size={20} />
           </button>
           <button
+           onClick={handleClickSearch}
             className="
-        rounded-full
-        p-2
-        bg-white
-        flex
-        items-center
-        justify-center
-        hover:opacity-75
-        transition
+           
+            rounded-full
+            p-2
+            bg-white
+            flex
+            items-center
+            justify-center
+            hover:opacity-75
+            transition
 
         "
           >
@@ -142,10 +156,10 @@ const Header: React.FC<HeaderProbs> = ({ children, className }) => {
         </div>
         <div
           className="
-        flex
-        justify-between
-        items-center
-        gap-x-4
+          flex
+          justify-between
+          items-center
+          gap-x-4
 
         "
         >
