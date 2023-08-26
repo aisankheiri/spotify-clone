@@ -24,6 +24,7 @@
     "autoprefixer": "10.4.15",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.17",
+    "helper-lib": "^0.2.6",
     "next": "13.4.16",
     "postcss": "8.4.28",
     "query-string": "^8.1.0",
@@ -46,6 +47,7 @@
   "devDependencies": {
     "@types/uniqid": "^5.3.2",
     "@types/uuid": "^9.0.2",
+    "babel-plugin-module-resolver": "^5.0.0",
     "supabase": "^1.86.2"
   }
 }
